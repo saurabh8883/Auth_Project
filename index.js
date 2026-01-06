@@ -1,4 +1,4 @@
-require('dotenv').config();   // ✅ MUST be first line
+require('dotenv').config();   
 const express = require('express');
 const helmet = require('helmet');
 const cors = require('cors');
@@ -33,3 +33,4 @@ app.get('/', (req, res) => {
 app.listen(process.env.PORT, () => {
 	console.log('Server is running');
 });
+console.log("Temporary change for stash");
